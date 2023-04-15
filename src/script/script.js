@@ -1,10 +1,10 @@
-const nav = document.querySelector(".dropdown");
+const dropdownMenu = document.querySelector(".dropdown");
 const dropdownNav = document.querySelector("#dropdown-nav");
 
 dropdownNav.addEventListener("click", function () {
-  if (nav.style.display == "none") {
-    nav.style.display = "flex";
+  if (dropdownMenu.style.display == "none") {
+    dropdownMenu.style.display = "flex";
   } else {
-    nav.style.display = "none";
+    dropdownMenu.style.display = "none";
   }
 });

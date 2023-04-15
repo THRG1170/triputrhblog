@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+    /* navigation bar */
     .nav-body {
         @apply h-14 px-20 items-center border-b-[1px] flex;
     }
@@ -23,7 +24,7 @@
         @apply flex ml-0 cursor-pointer md:ml-auto;
     }
 
-    .nav-utils a {
+    .nav-utils>a {
         @apply text-xl text-slate-600 hover:text-slate-800;
     }
 
@@ -31,7 +32,7 @@
         @apply text-xl;
     }
 
-    .nav-utils button {
+    .nav-utils>button {
         @apply ml-4 block md:hidden;
     }
 
@@ -39,10 +40,20 @@
         @apply absolute justify-center items-center h-60 w-48 right-10 top-20 rounded-lg shadow-lg p-6;
     }
 
-    .dropdown-li a{
+    .dropdown-li>a{
         @apply text-center cursor-pointer hover:text-cyan-600;
     }
     .dropdown-li{
         @apply my-4 text-center;
     }
+    /* nav end */
+
+
+
+
+
+
+
+
+    
 }
