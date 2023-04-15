@@ -36,7 +36,6 @@
     }
 
     .dropdown{
-        display: none;
         @apply absolute justify-center items-center h-60 w-48 right-10 top-20 rounded-lg shadow-lg p-6;
     }
 
