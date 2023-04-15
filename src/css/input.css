@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-body{
+        @apply flex px-20 h-14 items-center border-b-[1px];
+    }
+    .nav-logo{
+        @apply mr-auto;
+    }
+    .nav-li{
+        @apply flex;
+    }
+    .nav-li li{
+        @apply mx-4
+    }
+    .nav-utils{
+        @apply ml-auto;
+    }
+}
