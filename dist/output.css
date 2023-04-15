@@ -527,17 +527,105 @@ video {
 
 .nav-logo {
   margin-right: auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
 
 .nav-li {
-  display: flex;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-li {
+    display: flex;
+  }
 }
 
 .nav-li li {
   margin-left: 1rem;
   margin-right: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-li li:hover {
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
 .nav-utils {
-  margin-left: auto;
+  margin-left: 0px;
+  display: flex;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .nav-utils {
+    margin-left: auto;
+  }
+}
+
+.nav-utils a {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.nav-utils a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.nav-utils button i {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.nav-utils button {
+  margin-left: 1rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .nav-utils button {
+    display: none;
+  }
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  right: 2.5rem;
+  top: 5rem;
+  height: 15rem;
+  width: 12rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dropdown-li a {
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown-li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
+}
+
+.dropdown-li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }

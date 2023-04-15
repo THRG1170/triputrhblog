@@ -7,20 +7,42 @@
 
     <!-- only css -->
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav class="nav-body">
-        <div class="nav-logo">THRG</div>
+        <a href="#" class="nav-logo">THRG</a>
         <ul class="nav-li">
-          <li>Home</li>
-          <li>Project</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-utils"><i class="fa-brands fa-github"></i></div>
+        <div class="nav-utils">
+          <a href="https://github.com/thrg1170"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <button id="dropdown-nav"><i class="fa-solid fa-bars"></i></button>
+          <div class="dropdown">
+            <ul class="dropdown-ul">
+              <li class="dropdown-li"><a href="#">Home</a></li>
+              <li class="dropdown-li"><a href="#project">Project</a></li>
+              <li class="dropdown-li"><a href="#about">About</a></li>
+              <li class="dropdown-li"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <!-- script only -->
+    <script src="./src/script/script.js"></script>
   </body>
 </html>

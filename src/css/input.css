@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .nav-body{
-        @apply flex px-20 h-14 items-center border-b-[1px];
+@layer components {
+    .nav-body {
+        @apply h-14 px-20 items-center border-b-[1px] flex;
     }
-    .nav-logo{
-        @apply mr-auto;
+
+    .nav-logo {
+        @apply flex mr-auto items-center font-bold text-xl font-sans cursor-pointer;
     }
-    .nav-li{
-        @apply flex;
+
+    .nav-li {
+        @apply hidden md:flex;
     }
-    .nav-li li{
-        @apply mx-4
+
+    .nav-li li {
+        @apply text-center cursor-pointer mx-4 hover:text-cyan-600;
     }
-    .nav-utils{
-        @apply ml-auto;
+
+    .nav-utils {
+        @apply flex ml-0 cursor-pointer md:ml-auto;
+    }
+
+    .nav-utils a {
+        @apply text-xl text-slate-600 hover:text-slate-800;
+    }
+
+    .nav-utils button i {
+        @apply text-xl;
+    }
+
+    .nav-utils button {
+        @apply ml-4 block md:hidden;
+    }
+
+    .dropdown{
+        display: none;
+        @apply absolute justify-center items-center h-60 w-48 right-10 top-20 rounded-lg shadow-lg p-6;
+    }
+
+    .dropdown-li a{
+        @apply text-center cursor-pointer hover:text-cyan-600;
+    }
+    .dropdown-li{
+        @apply my-4 text-center;
     }
 }
