@@ -1,0 +1,15 @@
+$primary-color: #222831;
+$secondary-color: #393E46;
+$third-color: #00ADB5;
+$text-color: #d6d6d6;
+
+@mixin primaryParagraphFont($font-size: x-large){
+    font-family: 'Dongle', sans-serif;
+    font-size: $font-size;
+    color: $text-color;
+}
+@mixin primaryHeadingFont($font-size: medium){
+    font-family: 'Ubuntu', sans-serif;
+    font-size: $font-size;
+    color: $text-color;
+}

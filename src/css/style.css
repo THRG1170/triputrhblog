@@ -1,0 +1,23 @@
+body {
+  color: #d6d6d6;
+  background-color: #393E46;
+}
+
+.nav-body {
+  color: #d6d6d6;
+  background-color: #222831;
+}
+
+.main1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: medium;
+  color: #d6d6d6;
+}
+
+.main2 {
+  font-family: "Dongle", sans-serif;
+  font-size: x-large;
+  color: #d6d6d6;
+}
+
+/*# sourceMappingURL=style.css.map */

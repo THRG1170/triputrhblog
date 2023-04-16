@@ -1,0 +1,23 @@
+@use 'modules/mixin' as m;
+
+$primary-color: #222831;
+$secondary-color: #393E46;
+$third-color: #00ADB5;
+$text-color: #d6d6d6;
+
+body{
+    color: $text-color;
+    background-color: $secondary-color;
+}
+
+.nav-body{
+    color: $text-color;
+    background-color: $primary-color;
+}
+
+.main1 {
+    @include m.primaryHeadingFont();
+}
+.main2 {
+    @include m.primaryParagraphFont();
+}

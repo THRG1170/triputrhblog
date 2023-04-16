@@ -5,11 +5,11 @@
 @layer components {
     /* navigation bar */
     .nav-body {
-        @apply h-14 px-20 items-center border-b-[1px] flex;
+        @apply h-14 px-20 items-center flex;
     }
 
     .nav-logo {
-        @apply flex mr-auto items-center font-bold text-xl font-sans cursor-pointer;
+        @apply flex mr-auto items-center font-bold text-xl font-sans cursor-pointer hover:scale-110 transition-all;
     }
 
     .nav-li {
@@ -17,7 +17,7 @@
     }
 
     .nav-li li {
-        @apply text-center cursor-pointer mx-4 hover:text-cyan-600;
+        @apply text-center cursor-pointer mx-4 hover:text-cyan-600 hover:-translate-y-[2px] transition-all;
     }
 
     .nav-utils {
@@ -25,7 +25,7 @@
     }
 
     .nav-utils>a {
-        @apply text-xl text-slate-600 hover:text-slate-800;
+        @apply text-xl text-slate-100 hover:text-slate-300 hover:scale-110 transition-all;
     }
 
     .nav-utils button i {
