@@ -531,7 +531,7 @@ video {
   display: flex;
   cursor: pointer;
   align-items: center;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Ubuntu, sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -561,6 +561,7 @@ video {
   margin-right: 1rem;
   cursor: pointer;
   text-align: center;
+  font-family: Ubuntu, sans-serif;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -619,19 +620,25 @@ video {
   }
 }
 
-.dropdown {
+.dropdown{
+  font-family: 'ubuntu', sans-serif;
   position: absolute;
   right: 2.5rem;
   top: 5rem;
-  height: 15rem;
-  width: 12rem;
-  align-items: center;
-  justify-content: center;
+  height: 13rem;
+  width: 9rem;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 0.75rem;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dropdown button i{
+  font-size: 16px;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
 }
 
 .dropdown-li>a {
@@ -642,6 +649,10 @@ video {
 .dropdown-li>a:hover {
   --tw-text-opacity: 1;
   color: rgb(8 145 178 / var(--tw-text-opacity));
+}
+
+.dropdown-ul {
+  margin-left: 1rem;
 }
 
 .dropdown-li {

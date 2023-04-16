@@ -1,23 +1,87 @@
 body {
   color: #d6d6d6;
   background-color: #393E46;
+  scroll-behavior: smooth;
+  background-color: rgb(0, 33, 35);
 }
 
-.nav-body {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header .nav-body {
   color: #d6d6d6;
-  background-color: #222831;
+  background-color: transparent;
+}
+header .nav-body .dropdown {
+  background-color: #00ADB5;
 }
 
-.main1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: medium;
-  color: #d6d6d6;
+main {
+  position: relative;
+  background-color: rgb(0, 33, 35);
 }
-
-.main2 {
-  font-family: "Dongle", sans-serif;
+main .landingPage {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+main .landingPage .cta {
+  margin-top: 4rem;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+main .landingPage .cta h1 {
   font-size: x-large;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+main .landingPage .cta h1 span {
+  color: #00ADB5;
+}
+main .landingPage .cta p {
+  font-family: "Dongle", sans-serif;
+  font-size: xx-large;
   color: #d6d6d6;
+  font-weight: lighter;
+  margin-bottom: 4rem;
+}
+main .landingPage .cta a {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main .landingPage .cta a button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  padding-right: 24px;
+  padding-left: 24px;
+  height: 40px;
+  background-color: #00ADB5;
+  border-radius: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+main .landingPage img {
+  position: absolute;
+  bottom: 0;
+}
+main .myProject {
+  position: relative;
+  background-color: #393E46;
+}
+
+@media (min-width: 1080px) {
+  main .landingPage .cta {
+    width: 40%;
+  }
+  main .landingPage .cta p {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

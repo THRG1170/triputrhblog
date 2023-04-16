@@ -1,5 +1,7 @@
 const dropdownMenu = document.querySelector(".dropdown");
 const dropdownNav = document.querySelector("#dropdown-nav");
+const dropdownNavClose = document.querySelector("#dropdown-nav-close");
+const ctaButton = document.querySelector("ctaButton")
 
 dropdownNav.addEventListener("click", function () {
   if (dropdownMenu.style.display == "none") {
@@ -8,3 +10,7 @@ dropdownNav.addEventListener("click", function () {
     dropdownMenu.style.display = "none";
   }
 });
+
+dropdownNavClose.addEventListener("click", function () { 
+  dropdownMenu.style.display = "none";
+})
