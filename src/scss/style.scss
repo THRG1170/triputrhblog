@@ -92,7 +92,6 @@ main {
     .myProject{
         position: relative;
         background-color: $primary-color;
-        height: 400vh;
         padding: 2rem;
         h5{
             font-weight: 100;
@@ -171,9 +170,6 @@ main {
 
 @media (min-width: 1280px) {
     main{
-        .myProject{
-            height: 100vh;
-        }
     }
 }
 @media (min-width: 1024px) {
@@ -185,9 +181,6 @@ main {
                     margin-bottom: 2rem;
                 }
             }
-        }
-        .myProject{
-            height: 240vh;
         }
     }
 }

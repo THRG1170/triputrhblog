@@ -88,7 +88,6 @@ main .landingPage img {
 main .myProject {
   position: relative;
   background-color: #222831;
-  height: 400vh;
   padding: 2rem;
 }
 main .myProject h5 {
@@ -163,20 +162,12 @@ main .myProject .groupCard .card button:hover i {
     background-position: 0% 50%;
   }
 }
-@media (min-width: 1280px) {
-  main .myProject {
-    height: 100vh;
-  }
-}
 @media (min-width: 1024px) {
   main .landingPage .cta {
     width: 40%;
   }
   main .landingPage .cta p {
     margin-bottom: 2rem;
-  }
-  main .myProject {
-    height: 240vh;
   }
 }
 @media (min-width: 768px) {
