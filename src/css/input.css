@@ -6,7 +6,7 @@
 @layer components {
     /* navigation bar */
     .nav-body {
-        @apply h-14 px-20 items-center flex;
+        @apply h-14 px-14 items-center flex md:px-20;
     }
 
     .nav-logo {
@@ -39,6 +39,7 @@
 
     .dropdown{
         font-family: 'ubuntu', sans-serif;
+        z-index: 2;
         @apply absolute h-52 w-36 right-10 top-20 rounded-lg shadow-lg p-3;
     }
     .dropdown button i{

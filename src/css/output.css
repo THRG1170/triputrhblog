@@ -522,8 +522,15 @@ video {
   display: flex;
   height: 3.5rem;
   align-items: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .nav-logo {
@@ -622,6 +629,7 @@ video {
 
 .dropdown{
   font-family: 'ubuntu', sans-serif;
+  z-index: 2;
   position: absolute;
   right: 2.5rem;
   top: 5rem;
@@ -662,3 +670,101 @@ video {
 }
 
 /* nav end */
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-y-\[20px\] {
+  row-gap: 20px;
+}
+
+.gap-y-\[8rem\] {
+  row-gap: 8rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-y-\[8rem\] {
+    row-gap: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-y-\[8rem\] {
+    row-gap: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:gap-y-\[8rem\] {
+    row-gap: 8rem;
+  }
+}

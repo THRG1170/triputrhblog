@@ -1,1 +1,4 @@
 node_modules
+src/input.css
+src/scss/**/*.scss
+src/script/modules/**/*.js

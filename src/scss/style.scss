@@ -18,7 +18,7 @@ header{
     z-index: 2;
     .nav-body{
         color: $text-color;
-        background-color: transparent;
+        background-color: $third-color;
         .dropdown{
             background-color: $third-color;
         }
@@ -38,19 +38,32 @@ main {
             margin-top: 4rem;
             text-align: center;
             width: 80%;
-            z-index: 2;
-            h1{
+            z-index: 1;
+            .ctaHeading{
                 font-size: x-large;
                 font-weight: bolder;
                 margin-bottom: 10px;
                 span{
-                    color: $third-color;
+                    background-image: linear-gradient(90deg, #00ADB5, #009dff, #00ffe5, #00ff88, #5900ff);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    background-size: 2000px 2000px;
+                    animation: gradientAnim 4s infinite ease-in-out;
                 }
             }
-            p{
-                @include m.primaryParagraphFont($font-size: xx-large);
+            .ctaP{
+                @include m.primaryParagraphFont($font-size: x-large);
                 font-weight: lighter;
                 margin-bottom: 4rem;
+                span{
+                    background-image: linear-gradient(90deg, #009dff, #009dff, #00ADB5, #5900ff, #0077ff);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    background-size: 2000px 2000px;
+                    animation: gradientAnim 7s infinite ease-in-out;
+                }
             }
             a{
                 cursor: pointer;
@@ -71,16 +84,99 @@ main {
         }
         img{
             position: absolute;
+            transform-origin: center bottom;
+            transform: scale(3);
             bottom: 0;
         }
     }
     .myProject{
         position: relative;
-        background-color: $secondary-color;
+        background-color: $primary-color;
+        height: 400vh;
+        padding: 2rem;
+        h5{
+            font-weight: 100;
+            font-size: smaller;
+        }
+        .projectHeading{
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+        .projectP{
+            font-size: small;
+            margin-bottom: 4rem;
+        }
+        .groupCard:first-child{
+            margin-top: 6rem;
+        }
+        .groupCard{
+            .card{
+                img{
+                    margin-bottom: 8px;
+                }
+                .cardHeading{
+                    @include m.primaryHeadingFont($font-size: x-large);
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-size: larger;
+                    margin-left: 8px;
+                }
+                .cardParagraph{
+                    margin-left: 8px;
+                    margin-bottom: 12px;
+                    font-family: 'Ubuntu', sans-serif;
+                }
+                button{
+                    background-color: $third-color;
+                    color: #dedede;
+                    padding-right: 16px;
+                    padding-left: 16px;
+                    height: 36px;
+                    border-radius: 15px;
+                    margin-left: 8px;
+                    transition: 0.2s all ease-in-out;
+                    i{
+                        transition: 0.2s all ease-in-out;
+                        margin-left: 4px;
+                    }
+                }
+                button:hover{
+                    background-color: darken($color: $third-color, $amount: 4);
+                    i{
+                        transform: translateX(4px);
+                    }
+                }
+                overflow: hidden;
+                color: $secondary-color;
+                border-radius: 10px;
+                width: 350px;
+                height: 400px;
+                background-color: #dedede;
+            }
+        }
     }
 }
 
-@media (min-width: 1080px) {
+@keyframes gradientAnim {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@media (min-width: 1280px) {
+    main{
+        .myProject{
+            height: 100vh;
+        }
+    }
+}
+@media (min-width: 1024px) {
     main{
         .landingPage{
             .cta{
@@ -90,5 +186,17 @@ main {
                 }
             }
         }
+        .myProject{
+            height: 240vh;
+        }
     }
-  }
+}
+@media (min-width: 768px) {
+    main{
+        .landingPage{
+            img{
+                transform: scale(1);
+            }
+        }
+    }
+}
