@@ -1,126 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triputra</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triputra Harza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- only css -->
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link href="./src/css/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="nav-body">
-        <a href="#" class="nav-logo">THRG</a>
-        <ul class="nav-li">
-          <li><a href="#">Home</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-utils">
-          <a href="https://github.com/thrg1170"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <button id="dropdown-nav"><i class="fa-solid fa-bars"></i></button>
-          <div class="dropdown" style="display: none;">
-            <button id="dropdown-nav-close">
-              <i class="fa-regular fa-x"></i>
-            </button>
-            <ul class="dropdown-ul">
-              <li class="dropdown-li"><a href="#">Home</a></li>
-              <li class="dropdown-li"><a href="#project">Project</a></li>
-              <li class="dropdown-li"><a href="#about">About</a></li>
-              <li class="dropdown-li"><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      overflow: hidden;
+    }
 
-    <main>
-      <section class="landingPage">
-        <div class="cta">
-          <h1 class="ctaHeading">Hi, I'm <span>Triputra</span> Harza</h1>
-          <p class="ctaP">
-            im a beginer front end <span>web developer</span><br> and a junior high school student
-          </p>
-          <a href="#"><button class="ctaButton">Get Started</button></a>
-        </div>
-        <img src="./src/image/wave.svg" alt="a wave" />
-      </section>
-      <section class="myProject" id="project">
-        <h5>PORTOFOLIO</h5>
-        <h1 class="projectHeading">Project.</h1>
-        <p class="projectP">I'm a beginner web developer passionate about creating engaging online experiences. <br> My portfolio showcases projects where I've used HTML, CSS, and JavaScript to build simple <br> web pages with clean and intuitive design. Let's collaborate to bring your online presence to life. </p>
-        <div>
+    .bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, #2563eb55, transparent 30%),
+                  radial-gradient(circle at bottom right, #7c3aed55, transparent 30%);
+      filter: blur(40px);
+    }
 
-          <div class="groupCard grid grid-cols-1 gap-y-10 justify-items-center xl:grid-cols-3 lg:grid-cols-2 xl:gap-y-[8rem]">
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/tech" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/kitchen" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/technology" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/fiber" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/hack" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/350x200?/design" alt="tech">
-              <h1 class="cardHeading">Heading1</h1>
-              <p class="cardParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta rem dolorum optio exercitationem error pariatur, ipsa iste perferendis quisquam? (ignore this, abaikan)</p>
-              <button>Go to project <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="aboutMe" id="about"></section>
-    </main>
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 780px;
+      padding: 48px;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
 
-    <footer></footer>
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      color: #cbd5e1;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
 
-    <!-- script only -->
-    <script src="./src/script/script.js"></script>
-  </body>
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: #60a5fa;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.8;
+      font-size: 17px;
+      max-width: 650px;
+    }
+
+    .skills {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      color: white;
+      font-size: 14px;
+    }
+
+    .links {
+      margin-top: 40px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      padding: 14px 20px;
+      border-radius: 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        padding: 32px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+
+  <section class="card">
+    <div class="tag">Full Stack Developer • Student</div>
+
+    <h1>
+      Hi, I'm <span>Triputra Harza</span>
+    </h1>
+
+    <p>
+      I build modern web applications using React, TypeScript, Node.js, Supabase, and other modern technologies.
+      I'm currently studying at SMAN 1 Palu and continuously exploring backend architecture, realtime systems,
+      and full-stack development.
+    </p>
+
+    <div class="skills">
+      <div class="skill">React</div>
+      <div class="skill">Next.js</div>
+      <div class="skill">TypeScript</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Supabase</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">Tailwind CSS</div>
+      <div class="skill">Laravel</div>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="https://github.com/THRG1170" target="_blank">GitHub</a>
+      <a class="btn secondary" href="mailto:triputra@example.com">Contact</a>
+    </div>
+  </section>
+</body>
 </html>
